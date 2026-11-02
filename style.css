@@ -1,0 +1,254 @@
+/* Basic Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Design */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #203047;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #173b70;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #087f8c;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(
+        120deg,
+        #dcecff,
+        #e5f7f4
+    );
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #173b70;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #087f8c;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.btn:hover {
+    background-color: #06636d;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.container h2 {
+    color: #173b70;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px
+    rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card h3 {
+    color: #087f8c;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: #173b70;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+}
+
+/* Notice Page Design */
+
+.notice {
+    background-color: white;
+    padding: 22px;
+    margin: 20px 0;
+    border-left: 5px solid #087f8c;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.notice h3 {
+    color: #173b70;
+    margin-bottom: 10px;
+}
+
+.notice small {
+    display: block;
+    color: #087f8c;
+    margin-top: 12px;
+}
+
+/* Timetable Design */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th {
+    background-color: #173b70;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eaf2fa;
+}
+
+tr:hover {
+    background-color: #dcecff;
+}
+
+/* Dashboard Design */
+
+.stat {
+    font-size: 32px;
+    font-weight: bold;
+    color: #087f8c;
+    margin-top: 10px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.container > h2 {
+    margin-top: 30px;
+}
+
+/* Login Page Design */
+
+.login-box {
+    background-color: white;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px
+    rgba(0, 0, 0, 0.10);
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #173b70;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-box label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: bold;
+}
+
+.login-box input,
+.login-box select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 20px;
+}
